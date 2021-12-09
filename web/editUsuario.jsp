@@ -35,13 +35,13 @@
             <div class="sidebar" style="background: #46b8da">
                 <h2>Meddrug</h2>
                 <ul>
-                    <li><a href="#" style="color: #333"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#" style="color: #333"><i class="fas fa-home"></i>Inicio</a></li>
                     <li><a href="Controladorusu?accion=Guardar" style="color: #333"><i class="fas fa-user"></i>Usuarios</a></li>
                     <li><a href="Controlador?accion=Guardar" style="color: #333"><i class="fas fa-address-card"></i>Productos</a></li>
-                    <li><a href="#" style="color: #333"><i class="fas fa-project-diagram"></i>Proveedores</a></li>
-                    <li><a href="#" style="color: #333"><i class="fas fa-blog"></i>Rutas</a></li>
-                    <li><a href="#" style="color: #333"><i class="fas fa-address-book"></i>Contacto</a></li>
-                    <li><a href="#" style="color: #333"><i class="fas fa-map-pin"></i>Mapa</a></li>
+                    <li><a href="#" style="color: #333"><i class="fas fa-project-diagram"></i>Salida</a></li>
+                    <li><a href="#" style="color: #333"><i class="fas fa-blog"></i>Entrada</a></li>
+                    <li><a href="inventario.jsp" style="color: #333"><i class="fas fa-address-book"></i>Inventario</a></li>
+                    <li><a href="#" style="color: #333"><i class="fas fa-map-pin"></i>Contactos</a></li>
                     <li><a href="Logincontrolador?accion=Salir" style="color: #333"><i class="fas fa-door-open"></i>Cerrar Sesion</a></li>
                 </ul> 
                 <div class="social_media">
@@ -105,14 +105,7 @@
                         </div>
                     </div>
                 </div>
-                  <footer class="text-center text-white fixed-bottom">
-        <div class="container p-4"></div>
-        
-        <div class="text-center p-3" style="background-color: rgba(0,0,0,0.2); color: #333">
-            Pagina Creada Por Meddrug- Derechos Reservados &copy; 2021
-        </div>
-       
-    </footer>
+                  
             </div>
 
 

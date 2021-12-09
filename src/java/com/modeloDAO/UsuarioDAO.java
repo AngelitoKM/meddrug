@@ -4,6 +4,7 @@ import com.modelo.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class UsuarioDAO extends Conexion{
     
     public int agregar(Usuario usu) {
         Conexion cn = new Conexion();
-        String sql = "insert into usuario(tipoDocumento,numDocumento,nombres,apellidos,correo,telefono,clave) values(?,?,?,?,?,?,?)";
+        String sql = "insert into usuario(tipoDocumento,numDocumento,nombres,apellidos,correo,telefono,clave)values(?,?,?,?,?,?,?)";
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
@@ -29,7 +30,7 @@ public class UsuarioDAO extends Conexion{
             ps.setString(6, usu.getTelefono());
             ps.setString(7, usu.getClave1());
             ps.executeUpdate();
-        } catch (Exception e) {
+        } catch (SQLException e) {
         }
         return r;
     }

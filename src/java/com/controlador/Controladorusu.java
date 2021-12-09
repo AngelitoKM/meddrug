@@ -11,6 +11,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.apache.commons.fileupload.FileItemFactory;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 @WebServlet(name = "Controladorusu", urlPatterns = {"/Controladorusu"})
 public class Controladorusu extends HttpServlet {
@@ -26,6 +29,9 @@ public class Controladorusu extends HttpServlet {
             case "Guardar":
                 ArrayList<String> lista = new ArrayList<>();
                 try {
+                    FileItemFactory file = new DiskFileItemFactory();
+                    ServletFileUpload fileUpload = new ServletFileUpload(file);
+                    List items = fileUpload.parseRequest(request);
                     usu.setTipoDocu(lista.get(0));
                     usu.setNumDocu(lista.get(1));
                     usu.setNombre(lista.get(2));
