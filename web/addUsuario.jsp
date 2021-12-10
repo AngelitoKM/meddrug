@@ -1,3 +1,6 @@
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
 <%@page import="java.sql.ResultSet"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -45,7 +48,7 @@
 
 
                         <div class="col-12">
-                            <form action="Controladorusu?accion=Guardar" class="col-md-6" method="POST" enctype="multipart/form-data">
+                            <form action="" class="col-md-6" method="GET" enctype="multipart/form-data">
                                 <div class="card">
                                     <div class="card-header">
                                         <h3>Registrar Usuarios</h3>
@@ -81,11 +84,44 @@
                                         </div>
                                     </div>
                                     <div class="card-footer">
-                                        <button class="btn btn-outline-primary" name="accion" value="Guardar">Registrar Usuario</button>
+                                        <button class="btn btn-outline-primary" type="submit" name="btnGuardar">Registrar</button>
                                         <a href="Controladorusu?accion=Guardar" class="btn btn-outline-danger" name="cancelar">Cancelar</a>
                                     </div>                
                                 </div>
                             </form>
+                            
+                            <%
+                                if(request.getParameter("btnGuardar")!= null){
+                                String tipoDoc = request.getParameter("txtTipodoc1");
+                                String numDoc = request.getParameter("txtNumdoc1");
+                                String nombres = request.getParameter("txtNombres");
+                                String apellidos = request.getParameter("txtApellidos");
+                                String correo = request.getParameter("txtCorreo");
+                                String telefono = request.getParameter("txtTelefono");
+                                String clave1 = request.getParameter("txtClave1");
+                                
+                                Connection cnx = null;
+                                String url = "jdbc:mysql://localhost:3306/bd_prueba";
+                                String user = "root";
+                                String pass = "";
+                                ResultSet rs= null;
+                                Statement sta = null;
+                                
+                                
+                                try{                                
+                                Class.forName("com.mysql.jdbc.Driver");
+                                cnx=DriverManager.getConnection(url, user, pass);
+                                
+                                sta=cnx.createStatement();
+                                
+                                sta.executeUpdate("insert into usuario(tipoDocumento,numDocumento,nombres,apellidos,correo,telefono,clave) values('"+tipoDoc+"','"+numDoc+"','"+nombres+"','"+apellidos+"','"+correo+"','"+telefono+"','"+clave1+"')");
+                                request.getRequestDispatcher("Controladorusu?accion=Guardar").forward(request, response);
+                                }catch(Exception e){out.print(e+""); }
+                                
+                                }                            
+                                                                 
+                                                                        
+                                %>
                         </div>
                     </div>
                 </div>
