@@ -19,7 +19,7 @@ public class ProductoDAO extends Conexion{
     int r = 0;
 
     public int agregar(Producto p) {        
-        String sql = "insert into producto(Nombre, Ruta,descripcion,codigo,marca)values(?,?,?,?,?)";
+        String sql = "insert into producto(Nombre,Ruta,descripcion,codigo,marca)values(?,?,?,?,?)";
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);

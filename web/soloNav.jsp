@@ -11,7 +11,7 @@
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
     </head>
 
-    <<body>
+    <body>
 
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 

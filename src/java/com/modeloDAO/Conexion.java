@@ -150,5 +150,21 @@ public class Conexion {
         }
         return con;
     }
+    
+    public void desconectar(){
+            con=null;
+        }
+    public String conectar() {
+        String respuesta="";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection(url, user, pass);
+            respuesta="Exitoso";
+        } catch (Exception e) {
+            respuesta="Error, cambiar programador XD";
+        }
+        
+        return respuesta;
+    }
 
 }

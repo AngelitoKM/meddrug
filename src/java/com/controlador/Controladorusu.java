@@ -4,6 +4,8 @@ package com.controlador;
 import com.modelo.Usuario;
 import com.modeloDAO.UsuarioDAO;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -61,6 +63,9 @@ public class Controladorusu extends HttpServlet {
             case "eliminarUsuario":
                 eliminarUsuario(request, response);
                 break;
+            case "validarDocumento":
+                validarDocumento(request,response);
+              break;
 
             default:
                 throw new AssertionError();
@@ -105,6 +110,31 @@ public class Controladorusu extends HttpServlet {
         } else {
             request.setAttribute("msje", "No se encontro el usuario");
         }
+    }
+
+    private void validarDocumento(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    UsuarioDAO dao = new UsuarioDAO();
+    Usuario usu = new Usuario();
+        response.setContentType("text/html; charset-iso-8859-1");
+        PrintWriter out=response.getWriter();
+        try {
+           int cant = dao.validarDocumento(request.getParameter("numDoc"));
+            System.out.println("Usuarios Encontrados"+cant);
+            
+            if (cant !=0) {
+                System.out.println("El correo ya se encuentra registrado");
+                out.println("El correo se encuentra registrado!!");
+            }else{
+                System.out.println("El correo no esta registrado");
+                out.println("El correo no se encuentra registrado :3");
+            }
+        } catch (SQLException e) {
+            System.out.println("Correo no encontrado"+e.getMessage());
+        } finally{
+            
+        }
+    
+    
     }
 
 }

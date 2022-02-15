@@ -73,4 +73,30 @@ public class UsuarioDAO extends Conexion{
             throw e;
         }
     }
+    
+    public int validarDocumento(String numDoc) throws SQLException {
+    Conexion cn = new Conexion();
+    Usuario usu=new Usuario();
+    int total=0;
+    String sql = "SELECT COUNT(*) AS numDoc FROM usuario WHERE numDocumento=?";
+    try {
+        con = cn.getConnection();
+        ps=con.prepareStatement (sql);
+        ps.setString(1, numDoc);        
+        rs=ps.executeQuery();
+       while(rs.next ()) {
+            total=rs.getInt("numDoc");
+           
+       }
+       ps.close();
+        System.out.println("El total de resgistros que coinciden "+total);
+        
+    } catch (SQLException e){
+        System.out.println("Error en la consulta "+e.getMessage());
+    } finally {
+        con.close();
+        
+    }
+        return total;
+  } 
 }
