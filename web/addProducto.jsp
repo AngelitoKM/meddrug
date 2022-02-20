@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="main_content">
-                <div class="header">Vista Agregar Productos.</div>  
+                <div class="header"></div>
                 <div class="info">
 
                     <center>
