@@ -7,6 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <title>Productos - Meddrug</title>
+        <link href="img/Logo meddrug (only pildora).png" rel="icon">
         <script src="swetalert/sweetalert.js" type="text/javascript"></script>
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -17,7 +18,9 @@
 
         <div class="wrapper">
             <div class="sidebar text-secondary" style="background-color: #46b8da">
-                <h2>Meddrug</h2>                
+                <h2>Meddrug</h2>
+        
+                 
                 <ul>
                     <li><a href="#" style="color: #333"><i class="fas fa-home"></i>Inicio</a></li>
                     <li><a href="Controladorusu?accion=Guardar" style="color: #333"><i class="fas fa-user"></i>Usuarios</a></li>
@@ -35,7 +38,7 @@
                 </div>
             </div>
             <div class="main_content">
-                <div class="header">Vista Productos.</div>  
+                <div class="header"></div>  
                 <div class="info">
                     
                     

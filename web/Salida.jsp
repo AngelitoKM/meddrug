@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Salida - Meddrug</title>
+        <link href="img/Logo meddrug (only pildora).png" rel="icon">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="swetalert/sweetalert.js" type="text/javascript"></script>
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
@@ -37,7 +38,7 @@
        <%@include file="menu_1.jsp" %>
             <div class="main_content">
                 <div class="header">Salida.</div>  
-                <table>
+                <table style="background-color: #46b8da; border: #46b8da; margin-left: auto; margin-right: auto;">
                     <div class="container">
                         <th><a href="regSalida.jsp" class="btn btn-success" id="btn1" style="background-color: #46b8da; border: #46b8da">
                             <i class="fa fa-plus"></i> Registrar Salida</a></th>

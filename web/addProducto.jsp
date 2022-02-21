@@ -7,6 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <title>Añadir producto - Meddrug</title>
+        <link href="img/Logo meddrug (only pildora).png" rel="icon">
         <script src="swetalert/sweetalert.js" type="text/javascript"></script>
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
     </head>

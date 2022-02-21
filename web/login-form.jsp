@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Iniciar Sesion</title>
          <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="img/Logo meddrug (only pildora).png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -34,9 +34,9 @@
     <div class="container d-flex justify-content-between align-items-center" >
 
         <div class="logo" style="color: #000">
-            <h1 class="text-dark"><a href="index.html"><span>Meddrug</span></a></h1>
+            <!--<h1 class="text-light"><a href="index.html"><span>Meddrug</span></a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html"><img src="img/Logo meddrug sin lo blanco.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">

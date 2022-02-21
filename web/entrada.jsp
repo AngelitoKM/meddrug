@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Entrada - Meddrug</title>
+        <link href="img/Logo meddrug (only pildora).png" rel="icon">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="swetalert/sweetalert.js" type="text/javascript"></script>
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
@@ -39,7 +40,7 @@
                 <div class="header">Entrada.</div>  
                 <div class="info">
                     
-                    <table class="tablabtn">
+                    <table class="tablabtn" style="background-color: #46b8da; border: #46b8da; margin-left: auto; margin-right: auto;">
                     <div class="container">
                         <th><a href="addEntrada.jsp" class="btn btn-success" style="background-color: #46b8da; border: #46b8da">
                             <i class="fa fa-plus"></i> Nueva Entrada</a></th>

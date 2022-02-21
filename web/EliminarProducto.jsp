@@ -6,8 +6,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">        
         <title>Eliminar Producto - Meddrug</title>
+        <link href="img/Logo meddrug (only pildora).png" rel="icon">
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
        <%-- <link href="swetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
         <script src="swetalert/sweetalert.js" type="text/javascript"></script>

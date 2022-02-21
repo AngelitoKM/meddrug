@@ -4,7 +4,8 @@
 <html>
        <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Entrada - Meddrug</title>
+        <title>Inventario - Meddrug</title>
+        <link href="img/Logo meddrug (only pildora).png" rel="icon">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="swetalert/sweetalert.js" type="text/javascript"></script>
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
