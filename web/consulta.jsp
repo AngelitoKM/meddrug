@@ -35,11 +35,11 @@
                     <a href="#" style="color: #e0e4e8; background: #717171"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-        <%@include file="menu_1.jsp" %>
+        
+        
             
         <div class="main_content">
-                <div class="header">Vista Consultar Entrada.</div>  
+                <div class="header"></div>  
                 <div class="info">
                     <center>
                     </center>
@@ -47,8 +47,10 @@
                         <div>
                             <div class="form-group">
                             <form name="entrada" action="servEntrada" method="POST" autocomplete="off">
-                                <input type="text" name="Referencia" value="" size="30" /><br/>
+                                <input type="text" name="Referencia" value="" size="30" />                                
                                 <input type="submit" value="Consultar" name="btnconsultar" />
+                                <br>
+                                
                                 
                                 <table class="table table-bordered table-hover" width="780"  border="1">
                                     <thead>
@@ -82,6 +84,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             <footer class="text-center text-white fixed-bottom">
         <div class="container p-4"></div>
         <div class="text-center p-3" style="background-color: rgba(0,0,0,0.2); color: #333">
