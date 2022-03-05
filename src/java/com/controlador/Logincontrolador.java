@@ -34,15 +34,15 @@ public class Logincontrolador extends HttpServlet {
             if (r==1) {    
                 request.getRequestDispatcher("Controlador?accion=Guardar").forward(request, response);
                 
-            }else{
-                request.getRequestDispatcher("login-form.jsp").forward(request, response);
+            }else{               
+                request.getRequestDispatcher("lognform.html").forward(request, response);
                 
             }
             
             
         }else{
            
-        request.getRequestDispatcher("login-form.jsp").forward(request, response);
+        request.getRequestDispatcher("lognform.html").forward(request, response);
         }
     
 }
